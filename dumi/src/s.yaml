@@ -46,7 +46,7 @@ resources:
           - "daemon off;"
         port: 9000
       code: ./code/dist
-      runtime: custom.debian10
+      runtime: custom
 
   fc3_domain_0:
     component: fc3-domain
