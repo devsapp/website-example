@@ -18,29 +18,34 @@ access: "{{ access }}"
 
 vars: # 全局变量
   region: "{{ region }}"
-  functionName: "{{ functionName }}"
 
 resources:
-  docusaurus-site:
+  framework:
     component: fc3
     actions:
       pre-deploy:
-        # 当修改初始项目后，执行下列命令进行代码产物构建
-        - run: export PATH=/usr/local/versions/node/v18.14.2/bin:$PATH && npm install && npm run build && rm -rf node_modules
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm install
           path: ./code
-        # - run: rm -rf node_modules
-        #   path: ./code
-        - plugin: website-plugin-v3
-          args:
-            port: 80             # 监听端口, http 为 80, https 为 443
-            dist: /code/build    # build 后生成的代码目录, 绝对路径
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm run build
+          path: ./code
+        - run: cp nginx.conf ./code/build/nginx.conf
+          path: ./code
     props:
       region: ${vars.region}
-      functionName: ${vars.functionName}
+      functionName: "{{ functionName }}"
       description: "Serverless Devs Docusaurus Site."
-      timeout: 30
-      memorySize: 512
-      code: ./code
+      timeout: 60
+      memorySize: 1024
+      instanceConcurrency: 100
+      customRuntimeConfig:
+        command:
+          - nginx
+          - "-c"
+          - "/code/nginx.conf"
+          - "-g"
+          - "daemon off;"
+        port: 9000
+      code: ./code/build
       runtime: custom.debian10
   fc3_domain_0:
     component: fc3-domain
@@ -51,4 +56,4 @@ resources:
       routeConfig:
         routes:
           - path: /*
-            functionName: ${vars.functionName}
+            functionName: ${resources.framework.props.functionName}
