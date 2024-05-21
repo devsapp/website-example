@@ -36,8 +36,9 @@ resources:
       description: "Serverless Devs Dumi Site."
       timeout: 60
       cpu: 1
-      instanceConcurrency: 100
       memorySize: 2048
+      diskSize: 512
+      instanceConcurrency: 100
       customRuntimeConfig:
         command:
           - nginx
