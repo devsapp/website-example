@@ -35,8 +35,9 @@ resources:
       functionName: "{{ functionName }}"
       description: "Serverless Devs Dumi Site."
       timeout: 60
-      memorySize: 1024
+      cpu: 1
       instanceConcurrency: 100
+      memorySize: 2048
       customRuntimeConfig:
         command:
           - nginx
