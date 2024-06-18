@@ -28,7 +28,7 @@ resources:
           path: ./code
         - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm run build
           path: ./code
-        - run: cp nginx.conf ./dist/angular/nginx.conf
+        - run: cp nginx.conf ./dist/angular/browser/nginx.conf
           path: ./code
     props:
       region: ${vars.region}
@@ -47,7 +47,7 @@ resources:
           - "-g"
           - "daemon off;"
         port: 9000
-      code: ./code/dist/angular
+      code: ./code/dist/angular/browser
       runtime: custom
   fc3_domain_0:
     component: fc3-domain
