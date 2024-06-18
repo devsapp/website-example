@@ -28,7 +28,7 @@ resources:
           path: ./code
         - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm run build
           path: ./code
-        - run: cp nginx.conf ./build/nginx.conf
+        - run: cp nginx.conf ./dist/nginx.conf
           path: ./code
     props:
       region: ${vars.region}
