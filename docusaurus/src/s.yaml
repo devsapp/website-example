@@ -1,26 +1,10 @@
-# ------------------------------------
-#   欢迎您使用阿里云函数计算 fc3 组件进行项目开发
-#   组件仓库地址：https://github.com/devsapp/fc3
-#   组件帮助文档：https://github.com/devsapp/fc3/blob/master/docs/zh/readme.md
-#   Yaml参考文档：https://github.com/devsapp/fc3/blob/master/docs/zh/yaml/readme.md
-#   关于Serverless Devs和FC组件的关系、如何声明/部署多个函数等问题，可以参考文档：https://github.com/devsapp/fc3/blob/master/docs/zh/tips.md
-#   关于如何做CICD等问题，可以参考：https://www.serverless-devs.com/serverless-devs/cicd
-#   关于如何进行环境划分等问题，可以参考：https://www.serverless-devs.com/serverless-devs/extend
-#   更多函数计算案例，可参考：https://github.com/devsapp/awesome/
-#   有问题快来钉钉群问一下吧：33947367
-# ------------------------------------
 edition: 3.0.0
-name: framework
-# access 是当前应用所需要的密钥信息配置：
-# 密钥配置可以参考：https://www.serverless-devs.com/serverless-devs/command/config
-# 密钥使用顺序可以参考：https://www.serverless-devs.com/serverless-devs/tool#密钥使用顺序与规范
+name: start-docusaurus
 access: "{{ access }}"
-
-vars: # 全局变量
+vars:
   region: "{{ region }}"
-
 resources:
-  framework:
+  start_docusaurus:
     component: fc3
     actions:
       pre-deploy:
@@ -33,7 +17,7 @@ resources:
     props:
       region: ${vars.region}
       functionName: "{{ functionName }}"
-      description: "Serverless Devs Docusaurus Site."
+      description: Docusaurus Example
       timeout: 60
       cpu: 1
       memorySize: 2048
@@ -41,21 +25,19 @@ resources:
       instanceConcurrency: 100
       customRuntimeConfig:
         command:
-          - nginx
+          - "/opt/bin/nginx"
           - "-c"
           - "/code/nginx.conf"
           - "-g"
           - "daemon off;"
         port: 9000
       code: ./code/build
-      runtime: custom
-  fc3_domain_0:
-    component: fc3-domain
-    props:
-      region: ${vars.region}
-      domainName: auto
-      protocol: HTTP
-      routeConfig:
-        routes:
-          - path: /*
-            functionName: ${resources.framework.props.functionName}
+      runtime: custom.debian10
+      layers:
+        - acs:fc:${vars.region}:official:layers/Nginx/versions/1
+      customDomain:
+        domainName: auto
+        protocol: HTTP
+        route:
+          path: /*
+          qualifier: LATEST

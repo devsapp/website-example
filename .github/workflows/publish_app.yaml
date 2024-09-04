@@ -1,12 +1,13 @@
-name: auto try publish all 
+name: auto try publish all
 
 on:
   push:
     branches:
       - master
       - v3
+      - dipper
 env:
-  REGISTRY_TOKEN:  ${{secrets.ALIBABA_REGISTRY_V3_PUBLISH_TOKEN}} 
+  REGISTRY_TOKEN: ${{secrets.ALIBABA_REGISTRY_V3_PUBLISH_TOKEN}}
 
 jobs:
   auto-publish:
@@ -19,10 +20,10 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.10' 
+          python-version: "3.10"
       - name: install s
         run: |
           npm i @serverless-devs/s -g
-      - name: publish 
+      - name: publish
         run: |
           python auto-publish.py
