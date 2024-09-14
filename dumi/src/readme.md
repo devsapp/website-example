@@ -1,3 +1,6 @@
+
+> 注：当前项目为 Serverless Devs 应用，由于应用中会存在需要初始化才可运行的变量（例如应用部署地区、函数名等等），所以**不推荐**直接 Clone 本仓库到本地进行部署或直接复制 s.yaml 使用，**强烈推荐**通过 `s init ${模版名称}` 的方法或应用中心进行初始化，详情可参考[部署 & 体验](#部署--体验) 。
+
 # start-dumi-cap 帮助文档
 
 <description>
@@ -21,6 +24,30 @@
 
 </service>
 
+<remark>
+
+
+
+</remark>
+
+<disclaimers>
+
+
+
+</disclaimers>
+
+## 部署 & 体验
+
+<appcenter>
+   
+- :fire: 通过 [云原生应用开发平台 CAP](https://devs.console.aliyun.com/applications/create?template=start-dumi-cap) ，[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://devs.console.aliyun.com/applications/create?template=start-dumi-cap) 该应用。
+   
+</appcenter>
+<deploy>
+    
+   
+</deploy>
+
 ## 案例介绍
 
 <appdetail id="flushContent">
@@ -35,7 +62,7 @@ Dumi 的灵活性表现在它支持多种文档格式，包括 Markdown 和 JSX�
 
 作为一个开箱即用的工具，Dumi 支持自动生成导航和菜单，能够根据文件结构智能生成文档网站的布局。它还内置了代码高亮、实时编辑器等功能，让文档的呈现更加直观和互动。
 
-通过 Serverless 开发平台，您只需要几步，就可以体验 Dumi ，并享受 Serverless 架构带来的降本提效的技术红利。
+通过云原生应用开发平台，您只需要几步，就可以体验 Dumi ，并享受 Serverless 架构带来的降本提效的技术红利。
 
 </appdetail>
 
@@ -52,10 +79,14 @@ Dumi 的灵活性表现在它支持多种文档格式，包括 Markdown 和 JSX�
 
 ![图片alt](https://img.alicdn.com/imgextra/i3/O1CN01TxWTvM1cUDwi4CjKn_!!6000000003603-0-tps-2730-1306.jpg)
 
+
+### 二次开发
+
+您可以通过云端控制台的开发功能进行二次开发。如果您之前是在本地创建的项目案例，也可以在本地项目目录`website-dumi-v3`文件夹下，对项目进行二次开发。开发完成后，可以通过`s deploy`进行快速部署。
+
 </usedetail>
 
 ## 注意事项
 
 <matters id="flushContent">
 </matters>
-
