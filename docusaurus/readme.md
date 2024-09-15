@@ -1,3 +1,6 @@
+
+> 注：当前项目为 Serverless Devs 应用，由于应用中会存在需要初始化才可运行的变量（例如应用部署地区、函数名等等），所以**不推荐**直接 Clone 本仓库到本地进行部署或直接复制 s.yaml 使用，**强烈推荐**通过 `s init ${模版名称}` 的方法或应用中心进行初始化，详情可参考[部署 & 体验](#部署--体验) 。
+
 # start-docusaurus-cap 帮助文档
 
 <description>
@@ -21,6 +24,30 @@
 
 </service>
 
+<remark>
+
+
+
+</remark>
+
+<disclaimers>
+
+
+
+</disclaimers>
+
+## 部署 & 体验
+
+<appcenter>
+   
+- :fire: 通过 [云原生应用开发平台 CAP](https://devs.console.aliyun.com/applications/create?template=start-docusaurus-cap) ，[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://devs.console.aliyun.com/applications/create?template=start-docusaurus-cap) 该应用。
+   
+</appcenter>
+<deploy>
+    
+   
+</deploy>
+
 ## 案例介绍
 
 <appdetail id="flushContent">
@@ -33,7 +60,7 @@ Docusaurus 是一个为技术文档和博客推出的现代静态网站生成器
 
 Docusaurus 预设了响应式的布局，意味着你的文档网站将会在各种设备上呈现良好的阅读体验。另外，它内置了 Algolia 搜索支持，使得读者能够快速找到关键信息。Docusaurus 的版本控制功能也是一个亮点，它允许开发者轻松管理不同版本的文档，为用户提供多个版本的参考资料。
 
-通过 Serverless 开发平台，您只需要几步，就可以体验 Docusaurus ，并享受 Serverless 架构带来的降本提效的技术红利。
+通过云原生应用开发平台，您只需要几步，就可以体验 Docusaurus ，并享受 Serverless 架构带来的降本提效的技术红利。
 
 </appdetail>
 
@@ -56,4 +83,3 @@ Docusaurus 预设了响应式的布局，意味着你的文档网站将会在各
 
 <matters id="flushContent">
 </matters>
-

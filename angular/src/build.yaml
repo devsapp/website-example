@@ -1,0 +1,9 @@
+start_angular:
+  defaultBuilder:
+    languages:
+      - nodejs20
+    steps:
+      - run: npm install && npm run build
+        path: ./code
+      - run: cp nginx.conf ./dist/angular/browser/nginx.conf
+        path: ./code
