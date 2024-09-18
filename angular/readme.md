@@ -5,7 +5,7 @@
 
 <description>
 
-本案例将 Angular 框架示例快速创建并部署到阿里云函数计算 FC 。
+本案例将 Angular ，这一款优秀的前端 JS 框架示例，快速创建并部署到云原生应用开发平台 CAP。
 
 </description>
 
@@ -53,7 +53,7 @@
 
 <appdetail id="flushContent">
 
-本案例将 Angular 框架示例快速创建并部署到阿里云函数计算 FC 。
+本案例将 Angular 框架示例快速创建并部署到云原生应用开发平台 CAP。
 
 Angular 是谷歌开发的一款开源的 web 前端框架，诞生于 2009 年，由 Misko Hevery 等人创建，后为 Google 所收购。是一款优秀的前端 JS 框架，已经被用于 Google 的多款产品当中。
 

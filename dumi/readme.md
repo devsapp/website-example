@@ -5,7 +5,7 @@
 
 <description>
 
-本案例将 Dumi ，这一为 React 组件和库的开发者量身打造的文档生成器，快速创建并部署到阿里云函数计算 FC 。
+本案例将 Dumi ，这一为 React 组件和库的开发者量身打造的文档生成器，快速创建并部署到云原生应用开发平台 CAP 。
 
 </description>
 
@@ -21,6 +21,7 @@
 | 服务/业务 |  权限  | 相关文档 |
 | --- |  --- | --- |
 | 函数计算 |  AliyunFCFullAccess | [帮助文档](https://help.aliyun.com/product/2508973.html) [计费文档](https://help.aliyun.com/document_detail/2512928.html) |
+| 日志服务 |  AliyunFCServerlessDevsRolePolicy | [帮助文档](https://help.aliyun.com/zh/sls) [计费文档](https://help.aliyun.com/zh/sls/product-overview/billing) |
 
 </service>
 
@@ -52,7 +53,7 @@
 
 <appdetail id="flushContent">
 
-本案例将 Dumi ，这一为 React 组件和库的开发者量身打造的文档生成器，快速创建并部署到阿里云函数计算 FC 。
+本案例将 Dumi ，这一为 React 组件和库的开发者量身打造的文档生成器，快速创建并部署到云原生应用开发平台 CAP 。
 
 Dumi 与传统的文档工具不同，Dumi 不仅仅关注于文档内容的呈现，还提供了一套完善的开发环境，让开发者能够在编写文档的同时进行组件的开发和测试。它的设计理念是“在文档中开发，在开发中写文档”，通过这种方式融合了代码和文档的撰写流程。
 
