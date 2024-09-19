@@ -5,7 +5,7 @@
 
 <description>
 
-本案例将 Docusaurus ，这一使用者广泛的网站生成器，快速创建并部署到阿里云函数计算 FC 。
+本案例将 Docusaurus ，这一使用者广泛的网站生成器，快速创建并部署到云原生应用开发平台 CAP。
 
 </description>
 
@@ -21,6 +21,7 @@
 | 服务/业务 |  权限  | 相关文档 |
 | --- |  --- | --- |
 | 函数计算 |  AliyunFCFullAccess | [帮助文档](https://help.aliyun.com/product/2508973.html) [计费文档](https://help.aliyun.com/document_detail/2512928.html) |
+| 日志服务 |  AliyunFCServerlessDevsRolePolicy | [帮助文档](https://help.aliyun.com/zh/sls) [计费文档](https://help.aliyun.com/zh/sls/product-overview/billing) |
 
 </service>
 
@@ -52,7 +53,7 @@
 
 <appdetail id="flushContent">
 
-本案例将 Docusaurus ，这一使用者广泛的网站生成器，快速创建并部署到阿里云函数计算 FC 。
+本案例将 Docusaurus ，这一使用者广泛的网站生成器，快速创建并部署到云原生应用开发平台 CAP 。
 
 Docusaurus 是一个为技术文档和博客推出的现代静态网站生成器。它提供了一种轻量级的方法来创建和托管由 Markdown 驱动的文档网站。Docusaurus 的设计理念是将注意力集中在编写内容上，而非维护复杂的网站架构。它的直观性使得启动和部署项目变得极其简单，而且可以轻松地与版本控制工具（如Git）集成，从而优化文档协作流程。
 

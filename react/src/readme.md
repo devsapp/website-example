@@ -5,7 +5,7 @@
 
 <description>
 
-本案例将 React 框架示例快速创建并部署到阿里云函数计算 FC 。
+本案例将 React框架，快速创建并部署到云原生应用开发平台 CAP。其组件化、高性能和易于上手的特点，受到了广大开发者的喜爱和追捧。
 
 </description>
 
@@ -21,6 +21,7 @@
 | 服务/业务 |  权限  | 相关文档 |
 | --- |  --- | --- |
 | 函数计算 |  AliyunFCFullAccess | [帮助文档](https://help.aliyun.com/product/2508973.html) [计费文档](https://help.aliyun.com/document_detail/2512928.html) |
+| 日志服务 |  AliyunFCServerlessDevsRolePolicy | [帮助文档](https://help.aliyun.com/zh/sls) [计费文档](https://help.aliyun.com/zh/sls/product-overview/billing) |
 
 </service>
 
@@ -52,7 +53,7 @@
 
 <appdetail id="flushContent">
 
-本案例将 React 框架示例快速创建并部署到阿里云函数计算 FC 。
+本案例将 React 框架示例快速创建并部署到云原生应用开发平台 CAP 。
 
 </appdetail>
 
@@ -61,7 +62,7 @@
 <usedetail id="flushContent">
 
 ### 查看部署的应用
-本项目案例是 React 部署到阿里云 Serverless 平台（函数计算 FC），部署完成之后，您可以看到系统返回给您的案例地址。
+本项目案例是 React 部署到云原生应用开发平台 CAP，部署完成之后，您可以看到系统返回给您的案例地址。
 
 此时，打开案例地址，就可以进入 Rngular 默认的首页。
 
