@@ -7,11 +7,3 @@ start_docusaurus:
         path: ./code
       - run: cp nginx.conf ./build/nginx.conf
         path: ./code
-  defaultBuilder:
-    languages:
-      - nodejs20
-    steps:
-      - run: npm install && npm run build
-        path: ./code
-      - run: cp nginx.conf ./build/nginx.conf
-        path: ./code
