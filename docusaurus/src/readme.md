@@ -10,7 +10,7 @@
 </description>
 
 
-## 前期准备
+## 资源准备
 
 使用该项目，您需要有开通以下服务并拥有对应权限：
 
@@ -41,7 +41,7 @@
 
 <appcenter>
    
-- :fire: 通过 [云原生应用开发平台 CAP](https://devs.console.aliyun.com/applications/create?template=start-docusaurus-cap) ，[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://devs.console.aliyun.com/applications/create?template=start-docusaurus-cap) 该应用。
+- :fire: 通过 [云原生应用开发平台 CAP](https://cap.console.aliyun.com/template-detail?template=start-docusaurus-cap) ，[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://cap.console.aliyun.com/template-detail?template=start-docusaurus-cap) 该应用。
    
 </appcenter>
 <deploy>
@@ -65,14 +65,20 @@ Docusaurus 预设了响应式的布局，意味着你的文档网站将会在各
 
 </appdetail>
 
+
+
+
+
+
+
 ## 使用流程
 
 <usedetail id="flushContent">
 
 ### 查看部署的应用
-本项目案例是 docusaurus 部署到阿里云 Serverless 平台（函数计算 FC），部署完成之后，您可以看到系统返回给您的案例地址，例如：
+本项目案例是 docusaurus 部署到云原生应用开发平台 CAP，部署完成之后，您可以看到系统返回给您的案例地址，例如：
 
-![图片alt](https://img.alicdn.com/imgextra/i1/O1CN010c3YHL1a0nGVe2ZyK_!!6000000003268-0-tps-1196-584.jpg)
+![图片alt](https://img.alicdn.com/imgextra/i1/O1CN01OqxhbQ1qpCp5FTAiy_!!6000000005544-0-tps-1331-124.jpg)
 
 此时，打开案例地址，就可以进入 docusaurus 默认的首页：
 
@@ -80,7 +86,18 @@ Docusaurus 预设了响应式的布局，意味着你的文档网站将会在各
 
 </usedetail>
 
-## 注意事项
+## 二次开发指南
 
-<matters id="flushContent">
-</matters>
+<development id="flushContent">
+
+在初始化项目时，需要绑定代码仓库，CAP平台会自动配置代码仓库的Webhook。当仓库对应的分支有任何提交时，CAP平台会收到Webhook推送，并自动完成构建与部署。
+
+您也可以通过云端控制台 webIDE 的开发功能进行二次开发。
+
+</development>
+
+
+
+
+
+

@@ -10,7 +10,7 @@
 </description>
 
 
-## 前期准备
+## 资源准备
 
 使用该项目，您需要有开通以下服务并拥有对应权限：
 
@@ -41,7 +41,7 @@
 
 <appcenter>
    
-- :fire: 通过 [云原生应用开发平台 CAP](https://devs.console.aliyun.com/applications/create?template=start-vue-cap) ，[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://devs.console.aliyun.com/applications/create?template=start-vue-cap) 该应用。
+- :fire: 通过 [云原生应用开发平台 CAP](https://cap.console.aliyun.com/template-detail?template=start-vue-cap) ，[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://cap.console.aliyun.com/template-detail?template=start-vue-cap) 该应用。
    
 </appcenter>
 <deploy>
@@ -57,6 +57,12 @@
 
 </appdetail>
 
+
+
+
+
+
+
 ## 使用流程
 
 <usedetail id="flushContent">
@@ -64,11 +70,24 @@
 ### 查看部署的应用
 本项目案例是 Vue 部署到云原生应用开发平台 CAP ，部署完成之后，您可以看到系统返回给您的案例地址。
 
+![](https://img.alicdn.com/imgextra/i3/O1CN013LVkct1tRnQXPm2uu_!!6000000005899-0-tps-1292-131.jpg)
+
 此时，打开案例地址，就可以进入 Vue 默认的首页。
 
 </usedetail>
 
-## 注意事项
+## 二次开发指南
 
-<matters id="flushContent">
-</matters>
+<development id="flushContent">
+
+在初始化项目时，需要绑定代码仓库，CAP平台会自动配置代码仓库的Webhook。当仓库对应的分支有任何提交时，CAP平台会收到Webhook推送，并自动完成构建与部署。
+
+您也可以通过云端控制台 webIDE 的开发功能进行二次开发。
+
+</development>
+
+
+
+
+
+
